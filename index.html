@@ -74,6 +74,7 @@ nav .nav-links a.active { color: var(--accent); }
   background: var(--bg-warm); display: flex; align-items: center;
   justify-content: center; font-family: var(--serif);
   font-size: 2.2rem; color: #9a9188;
+  flex-shrink: 0;
 }
 .hero-text h1 {
   font-family: var(--serif); font-size: 2.4rem; font-weight: 400;
@@ -139,7 +140,8 @@ footer {
 
   <!-- Hero -->
   <div class="hero-grid">
-    <!-- Replace the div below with: <img class="hero-photo" src="photo.jpg" alt="Clara Fertonani"> once you have a photo -->
+    <!-- Replace the img tag's src with your actual photo file once you have one -->
+    <!-- <img class="hero-photo" src="photo.jpg" alt="Clara Fertonani"> -->
     <div class="photo-placeholder">CF</div>
 
     <div class="hero-text">
@@ -152,15 +154,17 @@ footer {
         <a href="https://www.dse.univr.it/?ent=persona&id=3990">Paolo Pertile</a>,
         <a href="#">Paola Bertoli</a>, and
         <a href="#">Alessandro Bucciol</a>.
+      </p>
+      <p class="hero-bio" style="margin-top:0.6rem;">
         My research lies at the intersection of
         <strong>Health Economics</strong>, <strong>Industrial Organization</strong>,
         and <strong>Applied Microeconometrics</strong>.
       </p>
+      <p class="hero-bio" style="margin-top:0.6rem;">
+        📧 <a href="mailto:clara.fertonani@univr.it">clara.fertonani[at]univr.it</a><br>
+        Department of Economic Sciences · University of Verona, Italy
+      </p>
       <div class="hero-links">
-        <a href="mailto:clara.fertonani@univr.it">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 4 10 8 10-8"/></svg>
-          Email
-        </a>
         <a href="CV_Fertonani.pdf" target="_blank">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           CV
@@ -173,15 +177,6 @@ footer {
       </div>
     </div>
   </div>
-
-  <!-- News -->
-  <h2 class="section-divider">News</h2>
-  <ul class="news-list">
-    <li><span class="news-date">2025:</span> Add your latest news here — conference presentations, visiting periods, prizes, or paper updates.</li>
-    <!-- Example:
-    <li><span class="news-date">Jun 2025:</span> Presenting at <strong>EuHEA PhD Conference</strong>, location.</li>
-    -->
-  </ul>
 
 </div>
 
