@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · Clara Fertonani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #111111; --ink-light: #2a2a2a; --ink-muted: #777777;
+  --bg: #ffffff; --bg-card: #ffffff; --bg-subtle: #f7f7f7;
+  --accent: #8b2500; --rule: #e8e8e8;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'DM Sans', -apple-system, sans-serif;
+  --max-w: 1320px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 18px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--sans); color: var(--ink); background: var(--bg); line-height: 1.7; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #ccc; transition: border-color 0.2s; }
+a:hover { border-bottom-color: var(--ink); }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+nav .nav-inner {
+  max-width: var(--max-w); margin: 0 auto; padding: 0.9rem 2.5rem;
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+nav .nav-name { font-family: var(--serif); font-weight: 500; font-size: 1.15rem; color: var(--ink); text-decoration: none; border-bottom: none; }
+nav .nav-name:hover { border-bottom: none; color: var(--ink-muted); }
+nav .nav-links { display: flex; gap: 2rem; list-style: none; }
+nav .nav-links a {
+  font-size: 0.78rem; font-weight: 400; color: var(--ink-muted);
+  text-decoration: none; border-bottom: none;
+  text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.2s;
+}
+nav .nav-links a:hover { color: var(--accent); }
+nav .nav-links a.active { color: var(--accent); }
+
+.page-title {
+  max-width: var(--max-w); margin: 0 auto; padding: 2.5rem 3rem 1rem;
+  font-family: var(--serif); font-size: 2.6rem; font-weight: 400; letter-spacing: 0.01em;
+  color: var(--accent);
+}
+
+.page-card {
+  max-width: var(--max-w); margin: 0 auto 2rem;
+  background: var(--bg-card); border: 1px solid var(--rule);
+  padding: 3rem 3rem 2.5rem; min-height: calc(100vh - 8rem);
+}
+
+.section-divider {
+  font-family: var(--serif); font-size: 1.5rem; font-weight: 400;
+  padding-bottom: 0.5rem; border-bottom: 1px solid var(--accent);
+  margin-bottom: 1.5rem; margin-top: 3rem; letter-spacing: 0.01em;
+  color: var(--accent);
+}
+.section-divider:first-of-type { margin-top: 0; }
+
+.paper-number {
+  display: inline-block; width: 2rem; margin-left: -2rem;
+  font-size: 0.82rem; color: var(--ink-muted); font-weight: 400;
+}
+
+.paper-item { padding: 0.2rem 0 0.2rem 2rem; }
+.paper-item + .paper-item { margin-top: 1.1rem; }
+
+.paper-title {
+  font-family: var(--serif); font-size: 1.1rem; font-weight: 500;
+  line-height: 1.4; margin-bottom: 0.1rem;
+}
+.paper-authors { font-size: 0.88rem; color: var(--ink-muted); font-style: italic; }
+
+.paper-links { margin-top: 0.4rem; display: flex; align-items: center; flex-wrap: wrap; gap: 0.8rem; }
+.paper-links a { font-size: 0.82rem; font-weight: 500; border-bottom: 1px solid #ccc; }
+.paper-links a:hover { border-bottom-color: var(--ink); }
+
+footer {
+  max-width: var(--max-w); margin: 0 auto;
+  padding: 1.5rem 2.5rem 2.5rem; text-align: center;
+  font-size: 0.8rem; color: var(--ink-muted); border-top: 1px solid var(--rule);
+}
+footer a { color: var(--ink-muted); border-bottom: none; }
+footer a:hover { color: var(--ink); }
+
+@media (max-width: 700px) {
+  html { font-size: 16px; }
+  .page-card { margin: 0; border-left: none; border-right: none; padding: 2rem 1.5rem; min-height: auto; }
+  .page-title { padding: 1.5rem 1.5rem 0.5rem; }
+  nav .nav-inner { padding: 0.8rem 1.2rem; }
+  nav .nav-links { gap: 1.2rem; }
+  nav .nav-links a { font-size: 0.7rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Clara Fertonani</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="CV_Fertonani.pdf" target="_blank">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h1 class="page-title">Research</h1>
+
+<div class="page-card">
+
+  <!-- ══ Work in Progress ══ -->
+  <h2 class="section-divider">Work in Progress</h2>
+
+  <div class="paper-item">
+    <div class="paper-title"><span class="paper-number">[1]</span>DRG Tariffs and Healthcare Quality in the Italian NHS</div>
+    <div class="paper-authors">with Paola Bertoli, Emanuele Bracco, and Paolo Pertile</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title"><span class="paper-number">[2]</span>Healthcare Workforce Shortages in Mixed Hospital Markets: A Two-Sided Model of Patients and Physicians</div>
+    <div class="paper-authors">with Paolo Pertile</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title"><span class="paper-number">[3]</span>The Price of Choice: How Private Hospital Access Shapes Out-of-Pocket Spending</div>
+    <div class="paper-authors">with Paola Bertoli and Giovanni Righetti</div>
+  </div>
+
+
+
+  <!-- ══ Policy Outputs ══ -->
+  <h2 class="section-divider">Policy Outputs</h2>
+
+  <div class="paper-item">
+    <div class="paper-title"><span class="paper-number">[1]</span>D6.10 – Empirical Analysis of the Impact of Incentives on Quality in Italy</div>
+    <div class="paper-authors">Bertoli, P., Bracco, E., Fertonani, C., &amp; Pertile, P. (2025). <em>EU Horizon Europe FLASH, G.A.: 101095424. Deliverable under review.</em></div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title"><span class="paper-number">[2]</span>D6.2 – Report Mapping Existing Incentives for GPs</div>
+    <div class="paper-authors">Boggian, L., Fertonani, C., Nicodemo, C., &amp; Tenaglia, S. (2024). <em>Zenodo.</em></div>
+    <div class="paper-links">
+      <a href="https://doi.org/10.5281/zenodo.14235158" target="_blank">DOI</a>
+    </div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title"><span class="paper-number">[2]</span>Improving Access to Medicines and Promoting Pharmaceutical Innovation</div>
+    <div class="paper-authors">EPRS – European Parliamentary Research Service, STOA Panel for the Future of Science and Technology (2023). <em>Contributed to drafting as external support (not listed as author).</em></div>
+    <div class="paper-links">
+      <a href="https://www.europarl.europa.eu/RegData/etudes/STUD/2023/753166/EPRS_STU(2023)753166_EN.pdf" target="_blank">PDF</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    Clara Fertonani · <a href="mailto:clara.fertonani@univr.it">clara.fertonani[at]univr.it</a><br>
+    Department of Economic Sciences · University of Verona, Italy
+  </p>
+</footer>
+
+<script>
+function toggleAbstract(id, btn) {
+  var el = document.getElementById(id);
+  el.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+</script>
+</body>
+</html>
