@@ -119,14 +119,13 @@ footer a:hover { color: var(--ink); }
 /* ── Responsive ── */
 @media (max-width: 700px) {
   html { font-size: 16px; }
-  .page-card { margin: 0; padding: 2rem 1.5rem; min-height: auto; border-left: none; border-right: none; }
-  .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; justify-items: center; text-align: center; }
-  .hero-photo { width: 150px; height: 150px; }
-  .hero-text h1 { font-size: 2rem; }
-  .hero-links { justify-content: center; }
+  .page-card { margin: 0; border-radius: 0; padding: 2rem 1.5rem; min-height: auto; border-left: none; border-right: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+  .hero-photo { width: 130px; height: auto; max-height: none; min-height: auto; }
+  .hero-text h1 { font-size: 1.8rem; }
   nav .nav-inner { padding: 0.8rem 1.2rem; }
-  nav .nav-links { gap: 1.2rem; }
-  nav .nav-links a { font-size: 0.7rem; }
+  nav .nav-links { gap: 1rem; }
+  nav .nav-links a { font-size: 0.74rem; }
 }
 </style>
 </head>
@@ -173,15 +172,18 @@ footer a:hover { color: var(--ink); }
         Department of Economics · University of Verona, Italy
       </p>
       <div class="hero-links">
+        <a href="mailto:clara.fertonani@univr.it">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 4 10 8 10-8"/></svg>
+          Email
+        </a>
         <a href="CV_Fertonani.pdf" target="_blank">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           CV
         </a>
-        <!-- Add links below as needed:
-        <a href="https://scholar.google.com/..." target="_blank">Scholar</a>
-        <a href="https://orcid.org/..." target="_blank">ORCID</a>
-        <a href="https://www.linkedin.com/in/..." target="_blank">LinkedIn</a>
-        -->
+        <a href="https://www.linkedin.com/in/clara-fertonani-282208345/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+          LinkedIn
+        </a>
       </div>
     </div>
   </div>
@@ -195,6 +197,5 @@ footer a:hover { color: var(--ink); }
   </p>
 </footer>
 
-  
 </body>
 </html>
